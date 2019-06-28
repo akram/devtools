@@ -28,7 +28,7 @@ while not tasksDone:
 
     subtasksDone = False
     while not subtasksDone:
-        subtask = input("\t\tSUBTASK : ")
+        subtask = input("\t\tSubtask Title : ")
         subtaskStatus = "_Completed _ " if re.match(ynre, input("\t\tCompleted(y) or In Progress(default) : ").strip()) else "_In Progress _ "
         subtask = "> • " +subtaskStatus + subtask
         task["subtasks"].append(subtask)
